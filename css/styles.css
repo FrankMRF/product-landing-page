@@ -44,7 +44,7 @@ header nav {
 }
 
 .item {
-    scroll-margin-top: 9ex;
+    scroll-margin-top: 11ex;
 }
 
 header nav div a p {
@@ -55,7 +55,29 @@ header nav ul {
     display: flex;
     padding: 20px;
     gap: 20px;
-    background-color: aqua;
+}
+
+header nav ul li{
+    background-color: #e4dede;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px;
+}
+
+header nav img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+#toggle {
+    display: none;
+}
+
+#label-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 #hero {
@@ -160,4 +182,10 @@ header nav ul {
 #informacion nav img {
     border-radius: 50%;
     width: 20px;
+}
+
+.dark {
+    background-color: #333;
+    color: white;
+    transition: all 1.5s ease;
 }
