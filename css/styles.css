@@ -3,20 +3,21 @@
     margin: 0;
     padding: 0;
 }
-/* Remover estilos de lista */
+
 ul,
 ol {
   list-style: none;
 }
-/* Resetear enlaces */
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-body {
+header {
     font-family: verdana, sans-serif;
     background-color: #ede3fa;
+
 }
 
 header nav {
@@ -33,26 +34,33 @@ header nav {
     flex-wrap: wrap; /*para que el contenido se adapte a la pantalla*/
 }
 
+#logo {
+    font-weight:bold;
+}
+
+main {
+    font-family: verdana, sans-serif;
+}
+
 #navegacion {
     display:flex;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     gap: 20px;
+    
 }
 
 #navegacion li{
-    background-color: #e4dede;
+    background-color: #a7a1a1;
     border-radius: 15px;
     padding: 10px;
     box-shadow: 5px 5px;
 }
 
-header nav div a p {
-    font-weight: bold;
-}
-
-header nav img {
+#label-toggle img {
     width: 20px;
     border-radius: 50%;
 }
@@ -66,6 +74,7 @@ header nav img {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    
 }
 
 #hero {
@@ -91,44 +100,90 @@ header nav img {
 
 #hero div {
     text-align: center;
+    max-width: 75ch;
+    margin: auto;
 }
 
 #features {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 40px;
     padding: 20px;
     gap: 20px;
 }
 
-#features div {
+#features article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     gap: 30px;
 }
 
-#features div h3 {
+#features article h3 {
     background-color: #797979;
     border-radius: 15px;
     padding: 20px;
 }
 
-#features div p {
+#features article p {
     text-align: center;
+    max-width: 30ch;
+    margin: auto;
 }
     
-#features div img {
+#features article img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#galeria h2 {
+    margin: 0;
+    background-color: #797979;
+    padding: 20px;
+}
+
+#galeria ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#galeria li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+#listaGaleria img {
     width: 300px;
     height: 300px;
+    object-fit: cover;
 }
 
 #delivery {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #delivery h2 {
@@ -158,7 +213,7 @@ header nav img {
 }
 
 .item {
-    scroll-margin-top: 11ex;
+    scroll-margin-top: 10ex;
 }
 
 #informacion {
@@ -173,10 +228,6 @@ header nav img {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-#informacion nav a {
-    display: flex;
 }
 
 #informacion nav img {
