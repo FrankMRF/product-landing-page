@@ -16,3 +16,8 @@ footer
 
  "Hola ChatGPT como desarrollador senior full stack, revisa el siguiente codigo HTML y corrígelo de tal manera que tenga una buena estructura semantica, que permita una mejor accesibilidad y experiencia al usuario.***
 
+
+ **NUEVA IMPLEMENTACION CON FLEXBOX**
+
+ Usé las etiquetas display: flex; / flex-direction: row; / justify-content: center; / justify-content: space-between; / flex-wrap: wrap; todo para una correcta distribución de los elementos en la UI.
+
