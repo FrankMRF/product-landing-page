@@ -21,7 +21,7 @@ header {
 }
 
 header nav {
-    background-color: rgb(109, 138, 201);
+    background-color: rgb(53, 14, 226);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,8 +34,11 @@ header nav {
     flex-wrap: wrap; /*para que el contenido se adapte a la pantalla*/
 }
 
-#logo {
-    font-weight:bold;
+#logo img {
+    width: 20%;
+    object-fit: cover;
+    margin-left: 50px;
+    box-shadow: 5px 5px #333;
 }
 
 main {
@@ -198,43 +201,49 @@ main {
 }
 
 #pagos {
+    border: 1px solid yellow;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 #pagos h2 {
+    border: 1px solid blue;
     margin: 0;
     background-color: #797979;
     padding: 20px;
 }
 
 #pagos li {
+    border: 1px solid red;
     margin: 7px;
 }
 
+/* Para quitar los espacios entre el header fijo y lo que mostraba los botones del menu*/
 .item {
     scroll-margin-top: 10ex;
 }
 
-#informacion {
-    background-color: rgb(109, 138, 201);
+#footer {
+    background-color: rgb(53, 14, 226);
     text-align: center;
     font-family: Impact;
-    padding: 20px;
+    padding: 10px;
 }
 
-#informacion nav {
-    margin: 15px;
+#footer nav {
+    margin: 10px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-#informacion nav img {
+#footer nav img {
     border-radius: 50%;
     width: 20px;
 }
+
+/* Codigo para modo oscuro*/
 
 .dark {
     background-color: #333;
