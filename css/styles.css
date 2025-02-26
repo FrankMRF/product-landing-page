@@ -14,14 +14,9 @@ a {
   color: inherit;
 }
 
-header {
-    font-family: verdana, sans-serif;
-    background-color: #ede3fa;
-
-}
-
-header nav {
+#menu {
     background-color: rgb(53, 14, 226);
+    font-family: verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,20 +41,20 @@ main {
 }
 
 #navegacion {
+    width: auto;
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px;
-    gap: 20px;
-    
+    padding: 5px;
+    gap: 5px;
 }
 
 #navegacion li{
     background-color: #a7a1a1;
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 5px 5px;
 }
 
@@ -201,21 +196,18 @@ main {
 }
 
 #pagos {
-    border: 1px solid yellow;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 #pagos h2 {
-    border: 1px solid blue;
     margin: 0;
     background-color: #797979;
     padding: 20px;
 }
 
 #pagos li {
-    border: 1px solid red;
     margin: 7px;
 }
 

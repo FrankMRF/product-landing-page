@@ -1,0 +1,137 @@
+
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "aside main";
+}
+
+header {
+    background-color: rgb(53, 14, 226);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    flex-wrap: wrap;
+}
+
+#header {
+    grid-area: header;
+}
+
+#logo img {
+    width: 20%;
+    object-fit: cover;
+    margin-left: 50px;
+    box-shadow: 5px 5px #333;
+}
+
+#navegacion {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    gap: 5px; 
+    
+}
+
+#navegacion li{
+    background-color: #a7a1a1;
+    box-shadow: 5px 5px;
+}
+
+#main {
+    grid-area: main;
+    background-color: white;
+    display: grid;
+    font-family: verdana, sans-serif;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 95px;
+}
+
+.articulo {
+    border: 2px solid rgb(53, 14, 226) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#aside-testimonios {
+    background-color: #a7a1a1;
+    grid-area: aside;
+    padding: 1rem;
+    height: 100%;
+    margin-top: 95px;
+}
+
+#aside-testimonios label {
+    margin: 10px;
+
+}
+
+#aside-testimonios input {
+    margin: 10px;
+    padding: 10px;
+}
+
+main #fotos {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+      grid-template-areas:
+        "header"
+        "aside"
+        "main";
+    }
+    header {
+       
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 30px;
+          
+    }
+
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-top: 30px;
+    }
+  }
+  
+  /* Para teléfonos móviles */
+  @media (max-width: 767px) {
+    body {
+      grid-template-areas:
+        "header"
+        "aside"
+        "main";
+    }
+  
+    main {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      margin-top: 30px;
+    }
+  }
